@@ -4,7 +4,7 @@ const panels = document.querySelectorAll('.panel')
 //console.log(panels) un comment if you want to see what they do
 
 panels.forEach(panel => {
-    panel.addEventListener('click', () => {
+    panel.addEventListener('click', () =>{
         removeActiveClasses
         panel.classList.add('active')
     })
