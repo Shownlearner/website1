@@ -37,4 +37,10 @@ body{
     bottom: 20px;
     left: 20px;
     margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 10;
+    opacity: 1;
 }
