@@ -27,6 +27,7 @@ body{
     flex: 1;
     color: grey;
     cursor: pointer;
+    position: relative;
 
 }
 
@@ -35,4 +36,5 @@ body{
     position: absolute;
     bottom: 20px;
     left: 20px;
+    margin: 0;
 }
