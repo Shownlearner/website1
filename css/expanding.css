@@ -25,4 +25,7 @@ body{
     margin: 0;
     border-radius: 50px;
     flex: 1;
+    color: white;
+    cursor: pointer;
+    
 }
