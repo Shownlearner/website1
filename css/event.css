@@ -8,5 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: darkred
+    background-color: navy
+}
+
+.box{
+    background-color: #222222;
+    color: #dddddd;
+    width: 
 }
