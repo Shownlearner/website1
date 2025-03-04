@@ -51,10 +51,14 @@ body {
 
 @Keyframes spin {
     from {
-
+        transfrom: rotate(0deg)
     }
     to {
-        
+        transfrom: rotate(360deg)
     }
 }
 
+#element5 {
+    animation: spin .3 linear infinite;
+    animation-play-state: paused;
+}
