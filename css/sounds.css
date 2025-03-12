@@ -17,6 +17,15 @@ body {
     padding: 5px 15px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 14px
+    font-size: 14px;
+    border: none;
 
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.btn:focus {
+    outline: none;
 }
