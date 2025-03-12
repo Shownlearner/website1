@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: black; /* Ensures the circle matches the screen color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1.5s ease, background-color 0.5s ease;
+    position: relative;
+  }
+
+  .circle-text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+
+  .circle.expanded {
+    transform: scale(10); /* Expands the circle */
+    background-color: black; /* Keeps the circle's color black */
+  }
+
+  .circle.expanded .circle-text {
+    display: none;
+  }
