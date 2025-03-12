@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(90deg, red, black);
+    display: flex; /* uses Flexbox which responds to different screen sizes */
+    align-items: center; /* vertically center */
+    justify-content: center;/* horizontally center */
+    height: 100vh;
+    margin: 0;
+}
