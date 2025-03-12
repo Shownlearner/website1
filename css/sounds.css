@@ -13,6 +13,7 @@ body {
 }
 
 .btn {
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     margin: 10px;
     color: rgb(255,255,255);
