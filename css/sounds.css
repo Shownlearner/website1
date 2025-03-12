@@ -9,3 +9,11 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+.btn {
+    background-color: black;
+    margin: 10px;
+    color: rgb(255,255,255);
+    padding: 15px;
+
+}
