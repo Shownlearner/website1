@@ -17,4 +17,79 @@ body {
     margin: 0 auto;
 }
 
+.nav{
+    position: fixed;
+    background-color: rgb(22,22,22);
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
+    color: white;
+    padding: 7px 15px;
+    text-decoration: none;
+
+}
+
+.hero {
+    background-image: url('../images/tree.avif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: top-center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin-bottom: 20px;
+    color: rgb(20,20,20);
+    z-index: -2;
+
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.hero h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+    z-index: 100;
+}
+
+.hero p{
+    font-size: 20px;
+    letter-spacing:1px;
+}
+
+.content h2, .content h3{
+    font-size: 150%;
+    margin: 20 px 0;
+}
+
+.content p{
+    color: rgb(55,55,55);
+    line-height:30px;
+    letter-spacing: 1.2px;
+}
