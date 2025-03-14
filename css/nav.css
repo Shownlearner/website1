@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Open sans', sans-serif;
-    color: grey;
+    color: black;
     padding-bottom: 50px;
 }
 
@@ -43,10 +43,27 @@ body {
     color: white;
     padding: 7px 15px;
     text-decoration: none;
+}
 
+.nav.active{
+    background-color: white;
+
+}
+.nav.active a {
+    color:black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current, .nav a:hover{
+    color: #c0392b;
+    font-weight:bold;
 }
 
 .hero {
+    position: relative;
     background-image: url('../images/tree.avif');
     background-repeat:no-repeat;
     background-size: cover;
@@ -69,7 +86,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255,255,255, 0.3);
+    z-index: -1;
 }
 
 .hero h1{
