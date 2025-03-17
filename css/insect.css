@@ -60,3 +60,9 @@ h1{
     width: 150px;
     height: 150px;
 }
+
+.choose-insect-btn img{
+    width:100px;
+    height:100px;
+    object-fit: contain;
+}
