@@ -24,5 +24,9 @@ h1{
     padding: 15px 20px;
     font-family:inherit;
     cursor: pointer;
-    
+}
+
+.btn:hover{
+    opacity:0.95;
+
 }
