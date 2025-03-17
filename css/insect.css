@@ -46,3 +46,7 @@ h1{
     list-style:none;
     padding: 0;
 }
+
+.insects-list li{
+    margin:10px;
+}
