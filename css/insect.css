@@ -50,3 +50,13 @@ h1{
 .insects-list li{
     margin:10px;
 }
+
+.choose-insect-btn{
+    background-color:transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor:pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
