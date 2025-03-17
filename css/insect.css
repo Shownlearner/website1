@@ -38,3 +38,11 @@ h1{
     height: 100vh;
     width: 100vw;
 }
+
+.insects-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    list-style:none;
+    padding: 0;
+}
