@@ -66,3 +66,8 @@ h1{
     height:100px;
     object-fit: contain;
 }
+
+.choose-insect-btn:active{
+    background-color: rgba(255,255,255,0.7);
+    
+}
