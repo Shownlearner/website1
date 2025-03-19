@@ -10,4 +10,10 @@ start_btn.addEventListener('click', ()=>{
     screens[0].classList.add('up')
 })
 
-choose_insect_btn(btn )
+choose_insect_btn(btn => {
+    btn.addEventListener('click', ()=> {
+        screens[1].classList.add('up')
+    })
+
+})
+
