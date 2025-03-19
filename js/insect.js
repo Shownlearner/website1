@@ -22,6 +22,7 @@ choose_insect_btns.forEach(btn => {
         const alt = img.getAttribute('alt');
         selected_insect = { src, alt };
         startGame();
+        createInsect()
     });
 });
 
