@@ -50,3 +50,10 @@ function createInsect(){
 
     game_container.appendChild(insect)
 }
+
+
+function getRandomlocation(){
+    const width = window.innerWidth
+    const height = window.innerHeight
+    
+}
