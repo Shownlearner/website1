@@ -6,4 +6,7 @@ const timeEl = document.getElementById('time')
 const scoreEl = docuemnt.getElementById('score')
 const message = document.getElementById('message')
 
+start_btn.addEventListener('click', ()=>{
+    
+})
 
