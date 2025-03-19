@@ -39,6 +39,10 @@ h1{
     width: 100vw;
 }
 
+.screen.up{
+    margin-top: -100vh;
+
+}
 .insects-list{
     display:flex;
     flex-wrap: wrap;
@@ -69,5 +73,5 @@ h1{
 
 .choose-insect-btn:active{
     background-color: rgba(255,255,255,0.7);
-    
+
 }
