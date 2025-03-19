@@ -41,6 +41,7 @@ function increaseTime() {
     }
     seconds += 1;
     timeEl.innerHTML = `Time: ${m}:${s}`;
+
 }
 
 function createInsect(){
@@ -55,5 +56,5 @@ function createInsect(){
 function getRandomlocation(){
     const width = window.innerWidth
     const height = window.innerHeight
-    
+    const x = Math.log(random())
 }
