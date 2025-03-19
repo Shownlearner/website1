@@ -6,6 +6,10 @@ const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
 
+let seconds = 0
+let score = 0
+let selected_insect = {}
+
 start_btn.addEventListener('click', ()=>{
     screens[0].classList.add('up')
 })
@@ -14,6 +18,9 @@ choose_insect_btn(btn => {
     btn.addEventListener('click', ()=> {
         screens[1].classList.add('up')
         const img = btn.querySelector('img')
+        const src = img.getAttribute('src')
+        const alt = img.getAttribute('alt')
+        selected_insect = {src, alt}
     })
 
 })
