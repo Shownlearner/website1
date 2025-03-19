@@ -21,7 +21,15 @@ choose_insect_btn(btn => {
         const src = img.getAttribute('src')
         const alt = img.getAttribute('alt')
         selected_insect = {src, alt}
+        startGame()
     })
 
 })
+function startGame() {
+    setInterval(increaseTime, 1000)
+}
 
+function increaseTime() {
+    timeEl.innerHtml = `Time: ${seconds}`
+    seconds = seconds + 1;
+}
