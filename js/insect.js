@@ -4,7 +4,6 @@ const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
 const game_container = document.getElementById('game-container');
 const timeEl = document.getElementById('time');
 const scoreEl = document.getElementById('score');
-const message = document.getElementById('message');
 
 let seconds = 0;
 let score = 0;
@@ -31,7 +30,7 @@ function startGame() {
 }
 
 function increaseTime() {
-    seconds += 1; // Increment seconds first
+    seconds += 1;
     let s = seconds % 60;
     let m = Math.floor(seconds / 60);
     if (s < 10) {
@@ -47,7 +46,7 @@ function createInsect() {
     const insect = document.createElement('div');
     insect.classList.add('insect');
     insect.innerHTML = `<img src="${selected_insect.src}" alt="${selected_insect.alt}">`;
-    const { x, y } = getRandomLocation(); // Properly invoke the function
+    const { x, y } = getRandomLocation();
     insect.style.top = `${y}px`;
     insect.style.left = `${x}px`;
     game_container.appendChild(insect);
@@ -57,19 +56,8 @@ function createInsect() {
         scoreEl.innerHTML = `Score: ${score}`;
         insect.remove();
         createInsect();
+        createInsect(); // Create two insects after one is clicked
     });
-}
-
-function catchInsect() {
-    increaseScore()
-    this.classList.add('caught')
-    setTimeout( ()=> this.remove(), 2000)
-    addInsects()
-}
-
-function getRandomLocation(){
-    const score = score +1
-    scoreEl.HTML = `score: ${score}`
 }
 
 function getRandomLocation() {
@@ -79,5 +67,6 @@ function getRandomLocation() {
     const y = Math.random() * height;
     return { x, y };
 }
+
 
 
