@@ -60,6 +60,16 @@ function createInsect() {
     });
 }
 
+function catchInsect() {
+    increaseScore()
+    this.classList.add('caught')
+}
+
+function getRandomLocation(){
+    const score = score +1
+    scoreEl.HTML = `score: ${score}`
+}
+
 function getRandomLocation() {
     const width = window.innerWidth - 100; // Adjust for the insect size
     const height = window.innerHeight - 100;
@@ -67,4 +77,5 @@ function getRandomLocation() {
     const y = Math.random() * height;
     return { x, y };
 }
+
 
