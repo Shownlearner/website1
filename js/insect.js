@@ -4,7 +4,7 @@ const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
 const game_container = document.getElementById('game-container');
 const timeEl = document.getElementById('time');
 const scoreEl = document.getElementById('score');
-const message = document.querySelector('.message')
+const message = document.querySelector('.message');
 
 let seconds = 0;
 let score = 0;
@@ -23,7 +23,7 @@ choose_insect_btns.forEach(btn => {
         selected_insect = { src, alt };
         startGame();
         createInsect();
-        message()
+        addMessage()
     });
 });
 
@@ -70,8 +70,8 @@ function getRandomLocation() {
     return { x, y };
 }
 
-function message{
-    if(score = 50){
+function addMessage() {
+    if(score == 50){
         message.classlist.add('visable')
     }
 }
