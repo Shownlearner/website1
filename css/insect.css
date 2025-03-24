@@ -11,7 +11,7 @@ body{
     height: 100vh;
     margin: 0;
     text-align: center;
-    
+    overflow:hidden; /*take this out if screen is stuck */
 }
 
 h1{
@@ -38,6 +38,7 @@ h1{
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    transition: margin 1s ease-out;
 }
 
 .screen.up{
