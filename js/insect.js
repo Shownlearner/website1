@@ -4,6 +4,7 @@ const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
 const game_container = document.getElementById('game-container');
 const timeEl = document.getElementById('time');
 const scoreEl = document.getElementById('score');
+const message = document.querySelector('.message')
 
 let seconds = 0;
 let score = 0;
@@ -71,7 +72,7 @@ function getRandomLocation() {
 
 function message{
     if(score = 50){
-        
+        message.classlist.add('visable')
     }
 }
 
