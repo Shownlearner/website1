@@ -22,6 +22,7 @@ choose_insect_btns.forEach(btn => {
         selected_insect = { src, alt };
         startGame();
         createInsect();
+        message()
     });
 });
 
@@ -68,5 +69,10 @@ function getRandomLocation() {
     return { x, y };
 }
 
+function message{
+    if(score = 50){
+        
+    }
+}
 
 
