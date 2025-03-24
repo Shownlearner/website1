@@ -84,6 +84,7 @@ h1{
 .time, .score{
 
    position: absolute;
+   color: grey;
    top: 20px;
    z-index: 100;
 }
