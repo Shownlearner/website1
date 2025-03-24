@@ -11,6 +11,7 @@ body{
     height: 100vh;
     margin: 0;
     text-align: center;
+    
 }
 
 h1{
@@ -84,7 +85,7 @@ h1{
 .time, .score{
 
    position: absolute;
-   color: grey;
+   color: #a6a6a6;
    top: 20px;
    z-index: 100;
 }
