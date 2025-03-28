@@ -59,7 +59,14 @@ function createInsect() {
         insect.remove();
         createInsect();
         createInsect(); // Create two insects after one is clicked
+        checkScoreForMessage(); // Call function here to check for the message
     });
+}
+
+function checkScoreForMessage() {
+    if (score >= 5) { // Ensure score >= 5 triggers the message
+        message.classList.add('visible');
+    }
 }
 
 function getRandomLocation() {
