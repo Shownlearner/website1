@@ -71,8 +71,9 @@ function getRandomLocation() {
 }
 
 function addMessage() {
-    if (score == 5) {
-        message.classList.add('visible'); 
+    if (score >= 5) { 
+        message.classList.add('visible');
+        message.innerHTML = "You've reached a score of 5! Keep going!";
     }
 }
 
