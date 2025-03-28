@@ -99,15 +99,27 @@ h1{
 }
 
 .message {
-    transform: translate(-50%, -150%);
-    opacity: 0;
-    transition: transform 1s ease-in, opacity 1s ease-in;
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5); /* Keeps the transparent dark background */
+    width: 100%;
+    padding: 20px;
+    z-index: 1000; /* Increase the z-index to bring it to the front */
+    text-align: center;
+    position: fixed; /* Change to 'fixed' so it stays in front of everything */
+    top: 0; /* Position at the top */
+    left: 50%;
+    transform: translate(-50%, -150%); /* Initial position off-screen */
+    opacity: 0; /* Hidden initially */
+    transition: transform 1s ease-in, opacity 1s ease-in; /* Smooth transition */
+    color: red; /* Make the text color red */
+    font-size: 24px; /* Make the font size slightly bigger for visibility */
 }
 
 .message.visible {
-    transform: translate(-50%, 150%); 
-    opacity: 1;
+    transform: translate(-50%, 0); /* Bring it into the center of the screen */
+    opacity: 1; /* Make it fully visible */
 }
+
 
 
 .insect{
