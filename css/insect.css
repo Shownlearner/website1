@@ -98,24 +98,15 @@ h1{
     right: 20px;
 }
 
-.message{
-    line-height: 1.7;
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    padding:20px;
-    z-index: 100;
-    text-align:center;
-    position:absolute;
-    top:0;
-    left: 50%;
+.message {
     transform: translate(-50%, -150%);
     opacity: 0;
-    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
 .message.visible {
-    transform:translate(-50%, 150%) ;
-    opacity:1;
+    transform: translate(-50%, 150%); 
+    opacity: 1;
 }
 
 
