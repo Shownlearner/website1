@@ -1,72 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100..900&display=swap');
-
-* {
-    box-sizing: border-box;
+/* General Styles */
+body {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Centers text elements across the page */
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    background: linear-gradient(45deg, blue, red); /* Fixed property */
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Header Navigation */
 .nav {
-    position: fixed;
-    background-color: rgb(22, 22, 22);
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav .container {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px;
+}
+
+.nav h1 {
+    text-align: center; /* Centers the header text */
+    margin: 0;
 }
 
 .nav ul {
+    list-style: none;
     display: flex;
-    list-style-type: none;
+    justify-content: center; /* Centers the navigation links */
+    padding: 0;
+    margin: 10px 0 0;
 }
 
-.nav a {
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    transition: 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.nav a:hover {
-    color: #c0392b;
-    font-weight: bold;
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Hero Section */
 .hero {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(45deg, red, blue); /* Fixed property */
-    margin-bottom: 20px;
+    text-align: center; /* Ensures content in hero section is centered */
+    padding: 50px 20px;
+    background: #fff;
+    margin: 20px auto; /* Centers the hero section container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limits the width for better centering */
 }
 
-.hero h1 {
-    font-size: 46px;
-    margin: -20px 0 20px;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
 }

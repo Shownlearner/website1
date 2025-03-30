@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="css/sounds.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
-<nav class="nav ">
-    <div class="container">
-        <h1 class="logo"><a href="index.html">My website</a></h1>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">My Website</a></h1>
             <ul>
-                <li><a href="sounds.html">sound page</a></li>
-                <li><a href="expanding.html">expanding page</a></li>
-                <li><a href="loading.html">loading page</a></li>
-                <li><a href="search.html">search page</a></li>
+                <li><a href="sounds.html">Sound Page</a></li>
+                <li><a href="expanding.html">Expanding Page</a></li>
+                <li><a href="loading.html">Loading Page</a></li>
+                <li><a href="search.html">Search Page</a></li>
                 <li><a href="nav.html">Navigation</a></li>
             </ul>
-    </div>
-</nav>
+        </div>
+    </nav>
+
     <audio src="sounds/applause.mp3" id="applause"></audio>
-        <audio src="sounds/boo.mp3" id="boo"></audio>
-        <audio src="sounds/gasp.mp3" id="gasp"></audio>
-        <audio src="sounds/tada.mp3" id="tada"></audio>
-        <audio src="sounds/victory.mp3" id="victory"></audio>
-        <audio src="sounds/wrong.mp3" id="wrong"></audio>
+    <audio src="sounds/boo.mp3" id="boo"></audio>
+    <audio src="sounds/gasp.mp3" id="gasp"></audio>
+    <audio src="sounds/tada.mp3" id="tada"></audio>
+    <audio src="sounds/victory.mp3" id="victory"></audio>
+    <audio src="sounds/wrong.mp3" id="wrong"></audio>
 
-        <div id="buttons"></div>
+    <div id="buttons"></div>
 
-        <script src="js/sounds.js"></script>
+    <!-- Button to navigate back to the index page -->
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Return to Home</button>
+    </div>
+
+    <script src="js/sounds.js"></script>
 </body>
 </html>

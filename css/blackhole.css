@@ -40,3 +40,26 @@ body {
   .circle.expanded .circle-text {
     display: none;
   }
+/* Position and Layer Fix */
+.button-container {
+  position: relative; /* Makes it stay within the layout flow */
+  z-index: 10; /* Ensures it stays above other elements like the blackhole */
+  margin-top: 20px; /* Adds spacing */
+  text-align: center;
+}
+
+button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a11cb;
+}
+

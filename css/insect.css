@@ -135,3 +135,26 @@ h1{
 .insect.caught{
     transform: scale(0);
 }
+/* Button Placement Fix */
+.button-container {
+    position: absolute; /* Makes it independent of other elements */
+    bottom: 20px; /* Places it near the bottom of the screen */
+    width: 100%; /* Ensures it's centered on the page */
+    text-align: center;
+}
+
+button {
+    background-color: #6a11cb; /* Adds contrast to ensure visibility */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
