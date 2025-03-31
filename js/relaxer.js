@@ -14,7 +14,7 @@ function breatheAnimation(){
         text.innerHTML = 'Hold'
     }, 3000)
 
-    steTimeout(()=> {
+    setTimeout(()=> {
         text.innerHTML = 'breathe Out!'
         container.classList.remove('grow')
         container.classList.add('shrink')
