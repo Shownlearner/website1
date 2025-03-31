@@ -81,5 +81,14 @@ body {
 
 
 .container.grow{
-    abimation: grow 
+    abimation: grow 3s linear forwards;
+}
+
+@Keyframes grow{
+    from{
+        transfrom: scale(1);
+    }
+    to{
+        transform:scale(1.2)
+    }
 }
