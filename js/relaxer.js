@@ -1,4 +1,4 @@
-const contaienr = document.getElementById('container')
+const contaiener = document.getElementById('container')
 const text = document.getElementById('text')
 
 setInterval(breatheAnimation,7500)
