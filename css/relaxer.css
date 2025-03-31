@@ -51,3 +51,11 @@ body {
     top: -10;
     left: 10;
 }
+
+.pointer{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: block;
+}
