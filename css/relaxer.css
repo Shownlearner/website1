@@ -82,7 +82,7 @@ body {
 
 
 .container.grow {
-    abimation: grow 3s linear forwards;
+    animation: grow 3s linear forwards;
 }
 
 @Keyframes grow {
