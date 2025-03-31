@@ -1,9 +1,22 @@
 const contaienr = document.getElementById('container')
 const text = document.getElementById('text')
 
-function breathAnimation(){
-    text.innerHTML = 'Breathe In'
-    container.classList.add(grow)
+setInterval(breatheAnimation,7500)
 
-    steTimeout(?,3000)
+
+
+function breatheAnimation(){
+    text.innerHTML = 'Breathe In'
+    container.classList.remove('shrink')
+    container.classList.add('grow')
+
+    setTimeout( ()=> {
+        text.innerHTML = 'Hold'
+    }, 3000)
+
+    steTimeout(()=> {
+        text.innerHTML = 'breathe Out!'
+        container.classList.remove('grow')
+        container.classList.add('shrink')
+    },3000)
 }
