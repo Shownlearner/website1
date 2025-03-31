@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0;
     z-index: -2;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .gradient-circle {
@@ -43,19 +43,43 @@ body {
             #ffffff 60%,
             #336d62 60%,
             #2a5b52 100%);
-    height: 320px;
-    width: 320px;
+    height: 340px;
+    width: 340px;
     z-index: -3;
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
     top: -10;
     left: 10;
 }
 
 .pointer{
-    background-color: white;
+    background-color: black;
     height: 20px;
     width: 20px;
     border-radius: 100%;
     display: block;
+}
+
+.pointer-container{
+    position: absolute;
+    top: -40px;
+    left:140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 7.5s linear infinite;
+    transform-origin: bottom center;
+}
+
+@Keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.container.grow{
+    abimation: grow 
 }
