@@ -6,6 +6,11 @@
 
 body {
     background: darkgrey url('../images/relaxing.avif') no-repeat center center/cover;
-
-
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-itmes: center;
+    margin: 0;
 }
