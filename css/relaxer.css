@@ -15,5 +15,15 @@ body {
     margin: 0;
 }
 
+.container {
+    display:flex;
+    align-times:center;
+    justify-content:center;
+    margin:auto;
+    height:300px;
+    width:300px;
+    position:relative;
+    
+}
 
 
