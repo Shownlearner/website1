@@ -80,27 +80,31 @@ body {
     content: "";
   }
 
-  .four-pointed-star{
-    position:relative;
-    margin:1em auto;
-    width:1em;
-    font-size:12em;
+  .four-pointed-star {
+    position: absolute; /* Enables precise positioning */
+    width: 1.2em; /* Slightly larger than the five-pointed star */
+    font-size: 6em; /* Adjusted size */
+    right: 10%; /* Positions it on the middle right */
+    top: 50%; /* Vertically centers it */
+    transform: translateY(-50%); /* Centers perfectly */
   }
 
-  .four-pointed-star:before{
-    content:"";
-    position:absolute;
-    background:yellow;
-    width:1em;
-    height:1.15em;
-    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  .four-pointed-star:before {
+    content: "";
+    position: absolute;
+    background: yellow;
+    width: 1.2em; /* Proportional size increase */
+    height: 1.35em; /* Adjusted slightly larger dimensions */
+    transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
   }
 
-  .four-pointed-star:after{
-    content:"";
-    position:absolute;
-    background:yellow;
-    width:1em;
-    height:1.15em;
-    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  .four-pointed-star:after {
+    content: "";
+    position: absolute;
+    background: yellow;
+    width: 1.2em; /* Proportional size increase */
+    height: 1.35em; /* Adjusted slightly larger dimensions */
+    transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
   }
+
+
