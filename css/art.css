@@ -1,5 +1,8 @@
 
 
+body{
+    background-color
+}
 .sun{
     height: 200px;
     width: 200px;
@@ -13,9 +16,9 @@
 .moon{
     height: 200px;
     width: 200px;
-    backrgound-color: grey;
+    background-color: lightgrey;
     border-radius: 50%;
     position: absolute;
-    bottom: 30px
+    bottom: 30px;
     left: 30px;
 }
