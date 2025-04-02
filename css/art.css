@@ -1,8 +1,12 @@
 
 
-body{
-    background-color
-}
+body {
+    background: linear-gradient(to bottom left, #87CEFA, #FF4500 25%, #000033);
+    height: 100vh; /* Ensures the background fills the viewport */
+    margin: 0;
+  }
+
+
 .sun{
     height: 200px;
     width: 200px;
