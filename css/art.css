@@ -29,5 +29,9 @@ body {
 }
 
 .planet{
-    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position absolute;
+    background: radial-gradient(circle at 60% 40%, #228B22 20%, #87CEEB 50%, #1E90FF 100%);
 }
