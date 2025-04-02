@@ -41,13 +41,13 @@ body {
 
 .five-pointed-star {
     --star-color: orange;
-    font-size: 4em; /* Makes the star smaller */
-    position: absolute; /* Enables precise positioning */
-    bottom: 10%; /* Positions it near the bottom */
-    left: 10%; /* Positions it near the middle left */
+    font-size: 4em; /* Smaller size */
+    position: absolute; /* Precise positioning */
+    bottom: 10%; /* Positioning near the bottom */
+    left: calc(10% + 100px); /* Moves it 100px to the right */
     width: 0px;
     height: 0px;
-    margin: 0; /* Removes the auto centering margin */
+    margin: 0; /* Removes centering margin */
     border-right: 0.4em solid transparent;
     border-bottom: 0.3em solid var(--star-color);
     border-left: 0.4em solid transparent;
@@ -55,7 +55,7 @@ body {
   }
 
   .five-pointed-star:before {
-    border-bottom: 0.35em solid var(--star-color); /* Adjusts size proportionally */
+    border-bottom: 0.35em solid var(--star-color); /* Proportional adjustment */
     border-left: 0.15em solid transparent;
     border-right: 0.15em solid transparent;
     position: absolute;
@@ -79,3 +79,4 @@ body {
     transform: rotate(-70deg);
     content: "";
   }
+
