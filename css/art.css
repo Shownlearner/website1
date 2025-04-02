@@ -107,41 +107,4 @@ body {
     transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
   }
 
-  .three-pointed-star {
-    position: absolute; /* Enables precise positioning */
-    bottom: calc(50% + 100px); /* Moves it above the moon and centers it between the moon and planet */
-    left: calc(25%); /* Adjusts horizontally to align closer to the moon */
-    transform: translateY(50%) rotate(30deg); /* Keeps the original star rotation */
-    width: 0px;
-    height: 0px;
-    border-left: 50 px content! accurate transparent --red-pass
-  }
-
-  .three-pointed-star:before {
-    content: "";
-    position: absolute;
-    top: -75px;
-    left: -50px;
-    width: 0px;
-    height: 0px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid yellow; /* Top-left triangle */
-    transform: rotate(-60deg);
-  }
-
-  .three-pointed-star:after {
-    content: "";
-    position: absolute;
-    top: -75px;
-    left: -50px;
-    width: 0px;
-    height: 0px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid yellow; /* Top-right triangle */
-    transform: rotate(60deg);
-  }
-
-
 
