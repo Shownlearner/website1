@@ -80,3 +80,27 @@ body {
     content: "";
   }
 
+  .four-pointed-star{
+    position:relative;
+    margin:1em auto;
+    width:1em;
+    font-size:12em;
+  }
+
+  .four-pointed-star:before{
+    content:"";
+    position:absolute;
+    background:yellow;
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+
+  .four-pointed-star:after{
+    content:"";
+    position:absolute;
+    background:yellow;
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  }
