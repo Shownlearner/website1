@@ -107,6 +107,42 @@ body {
     transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
   }
 
+  .three-pointed-star {
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow; /* Bottom triangle */
+    transform: rotate(30deg);
+  }
+
+  .three-pointed-star:before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow; /* Top-left triangle */
+    transform: rotate(-60deg);
+  }
+
+  .three-pointed-star:after {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow; /* Top-right triangle */
+    transform: rotate(60deg);
+  }
 
 
 
