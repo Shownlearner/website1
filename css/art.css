@@ -1,10 +1,11 @@
 
 
 body {
-    background: linear-gradient(to bottom left, #87CEFA, #FF4500 25%, #000033);
+    background: linear-gradient(to bottom left, #87CEFA, #000033);
     height: 100vh; /* Ensures the background fills the viewport */
     margin: 0;
   }
+
 
 
 .sun{
@@ -25,4 +26,8 @@ body {
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+
+.planet{
+    
 }
