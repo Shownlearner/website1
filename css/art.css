@@ -108,14 +108,13 @@ body {
   }
 
   .three-pointed-star {
-    position: relative;
-    display: inline-block;
+    position: absolute; /* Enables precise positioning */
+    bottom: calc(50% + 100px); /* Moves it above the moon and centers it between the moon and planet */
+    left: calc(25%); /* Adjusts horizontally to align closer to the moon */
+    transform: translateY(50%) rotate(30deg); /* Keeps the original star rotation */
     width: 0px;
     height: 0px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid yellow; /* Bottom triangle */
-    transform: rotate(30deg);
+    border-left: 50 px content! accurate transparent --red-pass
   }
 
   .three-pointed-star:before {
