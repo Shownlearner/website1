@@ -85,7 +85,7 @@ let voices = []
 function getVoices() {
     voices = speechSysthesis.getVoices()
 
-    voices.forEach(voice ()=>{
+    voices.forEach(voice =>{
         const option =  document.createElemebt('option')
 
         option.value = voice.name
@@ -93,3 +93,9 @@ function getVoices() {
         voiceSelect.appendChild(option)
     })
 }
+
+
+// voices changed
+speechSynthesis.addEventListener('voiceschanged', getVoices)
+
+getVoices()
