@@ -67,6 +67,10 @@ function createBox(item) {
     <p class = "info"> ${item.text} </p>
     `
 
+    box.addEventListener('click', ()=> {
+        setTextMessage()
+    })
+
     main.appendChild(box)
  }
 
