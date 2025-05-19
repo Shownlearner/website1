@@ -79,3 +79,17 @@ toggleBtn.addEventListener('click', ()=> {
 closeBtn.addEventListener('click', ()=> {
     document.getElementById('text-box').classList.remove('show')
 })
+
+let voices = []
+
+function getVoices() {
+    voices = speechSysthesis.getVoices()
+
+    voices.forEach(voice ()=>{
+        const option =  document.createElemebt('option')
+
+        option.value = voice.name
+        option.innerText =`${voice.name} $[voice.lang]`
+        voiceSelect.appendChild(option)
+    })
+}
