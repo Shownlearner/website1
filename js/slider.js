@@ -19,6 +19,7 @@ function changeSlide(direction) {
     if (direction === 'up') {
         currentSlide++;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
+        rightSide.style.transform = `translateY(-${(currentSlide - 1) * 100}%)`;
     } else if (direction === 'down') {
         currentSlide--;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
