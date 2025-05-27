@@ -17,10 +17,24 @@ function changeSlide(direction) {
     const rightSlide = rightSide.querySelector('.right');
 
     if (direction === 'up') {
+        if (currentSlide >= slideslength) {
+            currentSlide = 1; // Reset to first slide
+        }
+        if (currentSlide <= 1) {
+            currentSlide = slideslength; // Reset to last slide
+        }
+
         currentSlide++;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
         rightSide.style.transform = `translateY(-${(currentSlide - 1) * 100}%)`;
     } else if (direction === 'down') {
+        if (currentSlide >= slideslength) {
+            currentSlide = 1; // Reset to first slide
+        }
+        if (currentSlide <= 1) {
+            currentSlide = slideslength; // Reset to last slide
+        }
+
         currentSlide--;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
         rightSide.style.transform = `translateY(-${(currentSlide - 1) * 100}%)`;
