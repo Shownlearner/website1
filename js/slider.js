@@ -27,6 +27,9 @@ function changeSlide(direction) {
         if (currentSlide >= slideslength) {
             currentSlide = 0; // Reset to first slide
         }
+        if (currentSlide <= 1) {
+            currentSlide = slideslength + 1; // Reset to last slide
+        }
         currentSlide--;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
         rightSide.style.transform = `translateY(-${(currentSlide - 1) * 100}%)`;
