@@ -27,3 +27,4 @@ function changeSlide(direction) {
         rightSide.prepend(rightSlide);
     }
 }
+ 
