@@ -17,10 +17,6 @@ function changeSlide(direction) {
     if (direction === 'up') {
         leftSide.style.top = `${parseInt(leftSide.style.top) + 100}%`;
     } else if (direction === 'down') {
-        topSlide.classList.remove('top');
-        topSlide.classList.add('bottom');
-        bottomSlide.classList.remove('bottom');
-        bottomSlide.classList.add('top');
-        rightSide.prepend(rightSlide);
+        leftSide.style.top = `${parseInt(leftSide.style.top) - 100}%`;
     }
 }
