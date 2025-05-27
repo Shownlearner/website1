@@ -17,7 +17,7 @@ function changeSlide(direction) {
     const rightSlide = rightSide.querySelector('.right');
 
     if (direction === 'up') {
-        if (currentSlide >= slideslength +1) {
+        if (currentSlide >= slideslength ) {
             currentSlide = 1; // Reset to first slide
         }
         currentSlide++;
@@ -26,6 +26,9 @@ function changeSlide(direction) {
     } else if (direction === 'down') {
         if (currentSlide >= slideslength) {
             currentSlide = 1; // Reset to first slide
+        }
+        if (currentSlide <= 1) {
+            currentSlide = slideslength; // Reset to last slide
         }
         currentSlide--;
         leftSide.style.top = `${-(slideslength - currentSlide) * 100}%`;
